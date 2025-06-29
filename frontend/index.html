@@ -1,0 +1,172 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeighborFit – Find Your Ideal Neighborhood</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Import Google Fonts for clean UI typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide icon library (used for optional icons) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Top navigation bar -->
+    <nav class="navbar">
+      <div class="logo">🏠 NeighborFit</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#match">Get Started</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Hero section: welcome message and call to action -->
+      <header class="hero" id="home">
+        <div class="hero-content">
+          <h1>Welcome to NeighborFit</h1>
+          <p>
+            We match you with the perfect neighborhood based on your lifestyle
+            preferences.
+          </p>
+          <p>
+            Explore smarter living with data-driven insights, modern tools, and
+            community-based choices.
+          </p>
+          <a href="#match" class="cta">✨ Get Started</a>
+        </div>
+      </header>
+
+      <!-- Features or Introduction Section -->
+      <section class="features" id="features">
+        <div class="feature-card">
+          <h2>Why NeighborFit?</h2>
+          <p>
+            NeighborFit helps you make informed decisions when choosing where to
+            live. With insights into safety, green spaces, transport,
+            affordability, education, and entertainment — we match you with what
+            matters.
+          </p>
+        </div>
+      </section>
+
+      <!-- Preference form for matching algorithm -->
+      <section class="match-section" id="match">
+        <h2>Fill Your Preferences</h2>
+        <p class="form-note">
+          Please rate the importance of each factor on a scale of 0 (Not
+          Important) to 10 (Most Important). These ratings help us prioritize
+          your needs and deliver better neighborhood matches based on your
+          lifestyle.
+        </p>
+
+        <!-- Form to collect user weight preferences -->
+        <form id="preferenceForm" class="form-card">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="safetyWeight">Safety</label>
+              <input
+                type="number"
+                name="safetyWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 9"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="greenWeight">Green Spaces</label>
+              <input
+                type="number"
+                name="greenWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 7"
+              />
+            </div>
+            <div class="form-group">
+              <label for="affordabilityWeight">Affordability</label>
+              <input
+                type="number"
+                name="affordabilityWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 10"
+              />
+            </div>
+            <div class="form-group">
+              <label for="transportWeight">Transport Access</label>
+              <input
+                type="number"
+                name="transportWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 6"
+              />
+            </div>
+            <div class="form-group">
+              <label for="schoolWeight">School Quality</label>
+              <input
+                type="number"
+                name="schoolWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 8"
+              />
+            </div>
+            <div class="form-group">
+              <label for="entertainmentWeight">Entertainment</label>
+              <input
+                type="number"
+                name="entertainmentWeight"
+                min="0"
+                max="10"
+                required
+                placeholder="e.g. 4"
+              />
+            </div>
+          </div>
+          <div class="form-submit">
+            <button type="submit">🔍 Find Matches</button>
+          </div>
+        </form>
+
+        <!-- Dynamic section where results will be injected -->
+        <section id="results" class="results"></section>
+      </section>
+    </main>
+
+    <!-- Footer with about section -->
+    <footer class="footer" id="about">
+      <div class="footer-content">
+        <p><strong>About NeighborFit</strong></p>
+        <p>
+          NeighborFit is a smart web application designed to help users match
+          their preferences with real-world neighborhood data. Created to make
+          relocation decisions faster and smarter.
+        </p>
+        <p>© 2025 NeighborFit · Built for smarter neighborhood living</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for form interaction -->
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
