@@ -2,6 +2,7 @@
 
 NeighborFit is a full-stack web application designed to help individuals discover neighborhoods that best match their lifestyle preferences. It utilizes real-world data and algorithmic thinking to provide personalized recommendations based on user-defined parameters like safety, affordability, and transport access.
 
+Live Link - https://neighborfitapp.netlify.app/
 ---
 
 ## 🚀 Features
