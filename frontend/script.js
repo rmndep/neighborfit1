@@ -16,7 +16,7 @@ document
     };
 
     // Send the preference data to the backend server via POST request
-    const response = await fetch('https://neighborfit1.onrender.com//match'', {
+    const response = await fetch('https://neighborfit1.onrender.com//match', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
